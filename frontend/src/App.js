@@ -11,13 +11,15 @@ import {
 import styled from "styled-components";
 import { Navbar } from "./Components";
 import { AnimatePresence } from "framer-motion";
-
+import "./App.scss";
 const Pages = styled.div`
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  padding: 5rem;
+  // justify-content: center;
+  // align-items: center;
+  // position: absolute;
 
   h1 {
     font-size: calc(2rem + 2vw);
@@ -32,14 +34,19 @@ const App = () => {
   return (
     <>
       <Navbar />
+
       <Pages>
+        {/* <Header />
+        <About />
+        <Skill />
+        <Testimonial /> */}
         <AnimatePresence exitBeforeEnter>
           <Routes>
-            <Route exact path="/" element={<About />} />
-            <Route exact path="/team" element={<Footer />} />
-            <Route exact path="/calender" element={<About />} />
-            <Route exact path="/documents" element={<About />} />
-            <Route exact path="/projects" element={<About />} />
+            <Route exact path="/" element={<Header />} />
+            <Route exact path="/team" element={<About />} />
+            <Route exact path="/calender" element={<Skill />} />
+            <Route exact path="/documents" element={<Testimonial />} />
+            <Route exact path="/projects" element={<Work />} />
           </Routes>
         </AnimatePresence>
       </Pages>

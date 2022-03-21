@@ -1,8 +1,8 @@
 import React from "react";
+import MotionHoc from "../MotionHoc";
 import "./Skill.scss";
-
-const Skill = () => {
+const SkillComponent = () => {
   return <div>Skills</div>;
 };
-
+const Skill = MotionHoc(SkillComponent);
 export default Skill;

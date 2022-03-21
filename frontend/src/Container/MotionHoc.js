@@ -9,11 +9,16 @@ const MotionHoc = (Component) => {
         initial={{ y: 500 }}
         animate={{
           y: 0,
-          transition: { duration: 0.5, type: "spring" },
+          transition: { duration: 0.5, type: "spring", delayChildren: 0.5 },
         }}
         exit={{
           y: -500,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+          transition: {
+            duration: 0.5,
+            type: "spring",
+            ease: "easeInOut",
+            delayChildren: 0.5,
+          },
         }}
       >
         <Component />

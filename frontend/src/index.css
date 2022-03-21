@@ -4,7 +4,7 @@
   --black: #09090c;
   --grey: #a4b2bc;
   --white: #fff;
-  --background: rgba(137, 171, 245, 0.37);
+  --background: rgba(137, 171, 245, 0.2);
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
   --black-color: #030303;
@@ -15,11 +15,12 @@
 }
 
 
-html {
+/* html {
   overflow: hidden;
-}
+} */
 
 body {
+
   background-color: var(--background);
   font-family: "Poppins", sans-serif;
 }

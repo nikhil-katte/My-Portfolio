@@ -1,7 +1,8 @@
 import React from "react";
+import MotionHoc from "../MotionHoc";
 import "./Footer.scss";
-const About = () => {
+const FooterComponent = () => {
   return <div>Footer</div>;
 };
-
-export default About;
+const Footer = MotionHoc(FooterComponent);
+export default Footer;

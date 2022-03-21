@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //All the svg files
-import logo from "../../Assets/logo.svg";
+import logo from "../../Assets/logo.jpg";
 import Home from "../../Assets/home-solid.svg";
 import Team from "../../Assets/social.svg";
 import Calender from "../../Assets/sceduled.svg";
@@ -15,7 +15,7 @@ const Container = styled.div`
   position: fixed;
 
   .active {
-    border-right: 4px solid var(--white);
+    border-right: 4px solid var(--black);
 
     img {
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
@@ -63,7 +63,7 @@ const Button = styled.button`
 const SidebarContainer = styled.div`
   background-color: var(--black);
   width: 3.5rem;
-  height: 80vh;
+  height: 70vh;
   margin-top: 1rem;
   border-radius: 0 30px 30px 0;
   padding: 1rem 0;
@@ -77,8 +77,8 @@ const SidebarContainer = styled.div`
 `;
 
 const Logo = styled.div`
-  width: 2rem;
-
+  width: 2.5rem;
+  margin-top: 1rem;
   img {
     width: 100%;
     height: auto;
@@ -278,8 +278,8 @@ const Sidebar = () => {
           />
           <Details clicked={profileClick}>
             <Name>
-              <a>Jhon&nbsp;Doe</a>
-              <a href="/#">view&nbsp;profile</a>
+              <a href="/">Jhon&nbsp;Doe</a>
+              <a href="/">view&nbsp;profile</a>
             </Name>
 
             <Logout>
